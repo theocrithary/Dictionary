@@ -1,6 +1,6 @@
 <?php
 
-$host = "x.x.x.x";
+$host = "0.0.0.0";
 $db = "db_name";
 $usr = "db_username";
 $pwd = "db_password";
