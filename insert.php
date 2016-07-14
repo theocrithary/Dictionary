@@ -1,4 +1,4 @@
-<?
+<?php
 include ("dbconn.php");
 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />";
 

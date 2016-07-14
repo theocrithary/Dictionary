@@ -1,10 +1,10 @@
-<?
+<?php
 include ("header.html");
 include ("dbconn.php");	
 ?>
 
 </table>
-<?
+<?php
 # setup SQL statement	
 $sql = "SELECT * FROM dictionary ORDER BY tagalog";	
 
