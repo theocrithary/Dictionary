@@ -1,0 +1,43 @@
+<?
+include ("header.html");
+include ("dbconn.php");	
+?>
+
+</table>
+<?
+# setup SQL statement	
+$sql = "SELECT * FROM dictionary ORDER BY tagalog";	
+
+# execute SQL statement
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+
+    # display results		
+    echo ("<table class='reference'><tr><th>Tagalog</th><th>English</th><th>&nbsp;</th></tr>");		
+
+    while($row = $result->fetch_assoc()) {			
+        $tagalog = $row["tagalog"];			
+        $english = $row["english"];
+        $strID = $row["id"];			
+        echo ("<tr>");			
+        echo ("<td>$tagalog</td>\n");			
+        echo ("<td>$english</td>\n");		
+        echo ("<td><a href='update.php?id=$strID&tg=$tagalog&en=$english'>edit</a></td>\n");	  	  
+        //echo ("<td><a href='delete.php?strID=$strID'>delete</a></td>");
+        echo ("</tr>");		
+    }		
+    
+    echo ("</table>");
+
+} else {
+    echo "0 results";
+}
+
+// Close the database connection
+$conn->close();
+
+?>
+</center>
+</body>
+</html>

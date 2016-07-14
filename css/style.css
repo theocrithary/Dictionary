@@ -1,0 +1,88 @@
+/* BASIC RESET */
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
+
+/* HTML ELEMENTS */
+body { font: 22px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; }
+h1 { padding:60px 0 0 40px; }
+p { padding:10px 40px; }
+a { color:#999; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+#livesearch {
+  margin:0px;
+  width:312px;
+  margin:0;
+}
+
+#txt1 {
+  margin: 0px;
+}
+
+#logo_img {
+  width: 312px;
+  height: 50px;
+  align: center;
+}
+
+input[id="update"] {
+  width: 50px;
+  height: 50px;
+}
+
+input[type=text] {
+  width: 312px;
+  height: 40px;
+  align: center;
+  font-size:30px;
+}	
+
+body {
+  text-align: center;
+  margin:0;
+}
+
+div#search {
+  margin:0;
+}
+
+table.title {
+  border:0px solid #c9d7f1;
+  width: 100%;
+}
+
+table.title A:link {text-decoration: none}
+table.title A:visited {text-decoration: none}
+table.title A:active {text-decoration: none}
+
+table.title th {
+  background-color:#c9d7f1;
+  border: 1px solid #808080;
+  font-size:30px;
+  height: 10px;
+  width: 312px;
+}
+
+table.title th:hover {
+  background-color:#c0c0c0;
+}
+
+table.reference {
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
+  width: 312px;
+}
+
+table.reference th {
+  background-color:#c9d7f1;
+  border:1px solid #c0c0c0;
+  font-size:20px;
+  height: 10px;
+  width: 312px;
+}
+
+table.reference td {
+  border:1px solid #c3c3c3;
+  font-size:20px;
+  height: 10px;
+  width: 312px;
+}

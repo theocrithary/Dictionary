@@ -1,0 +1,68 @@
+<style type="text/css">
+
+#livesearch {
+  margin:0px;
+  width:194px;
+  margin:0;
+}
+
+#txt1 {
+  margin: 0px;
+}
+
+input[type=text] {
+  width: 700px;
+  height: 150px;
+  align: center;
+}	
+
+body {
+  text-align: center;
+  margin:0;
+}
+
+div#search {
+  margin:0;
+}
+
+table.title {
+  border:0px solid #c9d7f1;
+  width: 100%;
+}
+
+table.title A:link {text-decoration: none}
+table.title A:visited {text-decoration: none}
+table.title A:active {text-decoration: none}
+
+table.title th {
+  background-color:#c9d7f1;
+  border: 1px solid #808080;
+  font-size:55px;
+  height: 250px;
+  width: 500px;
+}
+
+table.title th:hover {
+  background-color:#c0c0c0;
+}
+
+table.reference {
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
+  align: center;
+  width: 100%;
+}
+
+table.reference th {
+  background-color:#c9d7f1;
+  border:1px solid #c0c0c0;
+  font-size:15px;
+}
+
+table.reference td {
+  border:1px solid #c3c3c3;
+  padding:3px;
+  align: center;
+}
+
+</style>
