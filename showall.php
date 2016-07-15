@@ -5,11 +5,18 @@ include ("dbconn.php");
 
 </table>
 <?php
+
 # setup SQL statement	
-$sql = "SELECT * FROM dictionary ORDER BY tagalog";	
+$sql = <<<SQL
+    SELECT *
+    FROM dictionary
+    ORDER BY tagalog
+SQL;
 
 # execute SQL statement
-$result = $conn->query($sql);
+if(!$result = $conn->query($sql)){
+    die('There was an error running the query [' . $db->error . ']');
+}
 
 if ($result->num_rows > 0) {
 
