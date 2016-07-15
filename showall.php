@@ -24,9 +24,9 @@ if ($result->num_rows > 0) {
     echo ("<table class='reference'><tr><th>Tagalog</th><th>English</th><th>&nbsp;</th></tr>");		
 
     while($row = $result->fetch_assoc()) {			
-        $tagalog = $row["tagalog"];			
-        $english = $row["english"];
-        $strID = $row["id"];			
+        $tagalog = $row["Tagalog"];			
+        $english = $row["English"];
+        $strID = $row["ID"];			
         echo ("<tr>");			
         echo ("<td>$tagalog</td>\n");			
         echo ("<td>$english</td>\n");		
