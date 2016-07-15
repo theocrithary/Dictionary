@@ -5,8 +5,8 @@
 
 	####$conn = new mysqli('hostname', 'user', 'pass', 'database');
 	
-* Create a mysql database with the following column names;
+* Create a mysql database table named 'dictionary' with the following columns;
 
-	####ID
-	####Tagalog
-	####English
+	####ID (int,unique,auto_increment)
+	####Tagalog (varchar)
+	####English (varchar)
