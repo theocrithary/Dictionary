@@ -43,7 +43,7 @@ include 'header.html';
     $dateFormat = 'Y-m-d H:i:s';	  
     $timeStamp = time();	  
     $dateTime= date($dateFormat,$timeStamp);	  
-    $sql = "UPDATE dictionary SET tagalog = '$tagalog', english = '$english', timestamp = '$dateTime' WHERE id = $id ";         
+    $sql = "UPDATE dictionary SET Tagalog = '$tagalog', English = '$english', timestamp = '$dateTime' WHERE ID = $id ";         
     $result = $conn->query($sql);
     echo "Data submitted to database! <a href='insert.php'>return</a><br>      
     Tagalog Word: $tagalog<br>      

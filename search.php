@@ -7,7 +7,7 @@ $q=$_GET["q"];
 
 if (strlen($q)>0) {
 	
-$sql = "SELECT * FROM dictionary WHERE tagalog LIKE '".$q."%' OR english LIKE '".$q."%' ";	
+$sql = "SELECT * FROM dictionary WHERE Tagalog LIKE '".$q."%' OR English LIKE '".$q."%' ";	
 $result = $conn->query($sql);
 
 }
@@ -18,8 +18,8 @@ if ($result->num_rows > 0) {
   
 	while($row = $result->fetch_assoc()) {  
 		echo "<tr>"; 
-		echo "<td>" . $row['tagalog'] . "</td>";
-		echo "<td>" . $row['english'] . "</td>";
+		echo "<td>" . $row['Tagalog'] . "</td>";
+		echo "<td>" . $row['English'] . "</td>";
 		echo "</tr>";
 	}
 	

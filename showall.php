@@ -10,12 +10,12 @@ include ("dbconn.php");
 $sql = <<<SQL
     SELECT *
     FROM dictionary
-    ORDER BY tagalog
+    ORDER BY Tagalog
 SQL;
 
 # execute SQL statement
 if(!$result = $conn->query($sql)){
-    die('There was an error running the query [' . $db->error . ']');
+    die('There was an error running the query [' . $conn->error . ']');
 }
 
 if ($result->num_rows > 0) {

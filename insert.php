@@ -39,18 +39,18 @@ include ("header.html");
   $tagalog = $_POST['tagalog'];      
   $english = $_POST['english'];            
   if ($tagalog != '') {	    
-    $sql = "SELECT COUNT(tagalog) FROM dictionary WHERE tagalog = '$tagalog'";	    
+    $sql = "SELECT COUNT(Tagalog) FROM dictionary WHERE Tagalog = '$tagalog'";	    
     $result = $conn->query($sql);	    
     # Count the results	    
     while($row = $result->fetch_assoc()){	      
-      $count = $row["COUNT(tagalog)"];	    
+      $count = $row["COUNT(Tagalog)"];	    
     }      
   } else if ($english != '') {      	
-    $sql = "SELECT COUNT(english) FROM dictionary WHERE english = '$english'";      	
+    $sql = "SELECT COUNT(English) FROM dictionary WHERE English = '$english'";      	
     $result = $conn->query($sql);     
     # Count the results	    
     while($row = $result->fetch_assoc()){	      
-      $count = $row["COUNT(english)"];	    
+      $count = $row["COUNT(English)"];	    
     }      
   } else {      	
     $end = 1;      
@@ -58,16 +58,16 @@ include ("header.html");
   if ($end == 1) {      	
     echo ("No values have been entered (<a href='insert.php'>return</a>)");      
   } else if ($count == 0) {      	
-    $sql = "INSERT INTO dictionary (tagalog,english) VALUES ('$tagalog','$english')";        
+    $sql = "INSERT INTO dictionary (Tagalog,English) VALUES ('$tagalog','$english')";        
     $result = $conn->query($sql);     
     echo "Data submitted to database! <a href='insert.php'>return</a><br>        
     Tagalog Word: $tagalog<br>        
     English Word: $english<br>";      
   } else {              
     if ($tagalog != '') {	      
-      $sql = "SELECT * FROM dictionary WHERE tagalog = '$tagalog'";        
+      $sql = "SELECT * FROM dictionary WHERE Tagalog = '$tagalog'";        
     } else if ($english != '') {      	  
-      $sql = "SELECT * FROM dictionary WHERE english = '$english'";        
+      $sql = "SELECT * FROM dictionary WHERE English = '$english'";        
     }	  		  	
     # Search for results in database	  	
     $result = $conn->query($sql);     
@@ -76,8 +76,8 @@ include ("header.html");
     echo ("<table class='reference'><tr><th>Tagalog</th><th>English</th><th>&nbsp;</th><th>&nbsp;</th></tr>");	  	
     while ($row = $result->fetch_assoc()) {	      
       $strID = $row["id"];	  	  
-      $tagalog = $row["tagalog"];	  	  
-      $english = $row["english"];	  	  
+      $tagalog = $row["Tagalog"];	  	  
+      $english = $row["English"];	  	  
       echo ("<tr>");	  	  
       echo ("<td>$tagalog</td>\n");	  	  
       echo ("<td>$english</td>");	  	  
