@@ -14,7 +14,7 @@ include ("header.html");
   <td></td>
 </tr>
 
-<form name="form1" method="post"         action="<?php echo $me;?>">      
+<form name="form1" method="post" action="<?php echo $me;?>">      
 <table>
   <tr>            
     <td>Tagalog:</td>            
